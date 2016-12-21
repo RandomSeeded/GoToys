@@ -8,5 +8,8 @@ Thoughts:
 4) How to calculate 'perimeter' of the island? It SEEMS like that's basically going to be 1 unit for every cell of water that a cell of land touches (including edges)
 5) So every time a cell of land does not have a cell of land next to it (in a given direction), that's one unit of perimeter.
 
+NOTES:
 
+Arrays appear to be of fixed size
+Slices are not
 
