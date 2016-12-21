@@ -3,6 +3,11 @@ package main
 import "fmt"
 
 func calculatePerimeter(grid [][]int) int64 {
+  var visited map[string]int
+  visited = make(map[string]int)
+  visited["0,0"] = 1
+  
+  fmt.Println("visited",visited)
   return 1
 }
 
@@ -14,13 +19,13 @@ func main() {
   fmt.Printf("Hello world!")
   secondFunction()
 
-  grid := make([][]int, 5)
-  for i := 0; i < 5; i++ {
-    grid[i] = make([]int, 5)
-    for j := 0; j < 5; j++ {
-      grid[i][j] = i + j
-    }
+  grid := make([][]int, 3)
+  for i := 0; i < 3; i++ {
+    grid[i] = make([]int, 3)
   }
+  grid[0][0] = 1
+  grid[1][0] = 1
+  grid[1][1] = 1
   fmt.Println("grid", grid)
 
   fmt.Println("output", calculatePerimeter(grid))
